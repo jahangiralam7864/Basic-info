@@ -70,3 +70,15 @@ const getName = () => 'Brandon Sam';
 const name = getName();
 
 console.log(name);
+
+// kono array upadan paite 
+const numbers = [10,20,30,40,50];
+console.log(numbers); //result = [ 10, 20, 30, 40, 50 ]
+console.log(...numbers); //result = 10 20 30 40 50
+
+const max = Math.max(10,20,30,40,50);
+const maxInArray = Math.max(...numbers);
+console.log(max,maxInArray);
+
+numbers.push(100);
+console.log(numbers);
