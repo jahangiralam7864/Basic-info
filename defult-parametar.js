@@ -53,4 +53,20 @@ const sum2 = add2(15,17);
 const sum3 = add3(15,17);
 const sum4 = add4(15,17);
 console.log(sum1,sum2,sum3,sum4);
+// array add
+const addTest = (num1,num2) => num1 + num2;
+const sum = (22,90);
 
+const multiply = (num1,num2,num3,num4) => num1 * num2 *num3;
+const results = multiply(4,12,3);
+
+const tenTimes = (num) => num * 10;
+const output = tenTimes(17);
+
+const fiveTimes = num => num * 5;
+const value = fiveTimes (17);
+
+const getName = () => 'Brandon Sam';
+const name = getName();
+
+console.log(name);
