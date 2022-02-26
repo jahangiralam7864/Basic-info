@@ -75,10 +75,69 @@ console.log(name);
 const numbers = [10,20,30,40,50];
 console.log(numbers); //result = [ 10, 20, 30, 40, 50 ]
 console.log(...numbers); //result = 10 20 30 40 50
-
+//Max number check
 const max = Math.max(10,20,30,40,50);
 const maxInArray = Math.max(...numbers);
 console.log(max,maxInArray);
 
 numbers.push(100);
 console.log(numbers);
+// first number add
+const jahangir = [45, 12, 36, 84];
+jahangir.unshift(25);
+console.log(jahangir);
+
+//ES6 diye function col
+function getSum(a, b =9) {
+    return a + b;
+}
+console.log(getSum(2,7));
+
+// const y = x => x*x;
+// const z = y(5)
+// console.log(z);
+
+const y = x => x*x; 
+const z = y(5);
+console.log(z);
+
+const nayikas=['mousumi' , 'popy' ,'shabnur', 'purnima' ];
+const array2 = [...nayikas];
+console.log(array2);
+
+const num=[10,20,30,40,50,60,70];
+ x = Math.max(...num);
+console.log(x);
+// new array add
+const cars=['toyota', 'honda','mercedes']; 
+const newCars= [...cars , 'ferrari']; 
+console.log(newCars);
+
+// object information add DOM 
+
+// const fish = {id:50, name:'King Halsha',price:9000,phone:0194849584 3,address:'chandpur',dress:'silver'};
+// console.log(fish.phone);
+
+const company = {
+    name:'GP', 
+    ceo: {
+        id:1, 
+        name: 'jahangir', 
+        food:'fuckha'
+    } ,
+    web: {
+        work:'website development', 
+        employee: 20, 
+        framework:'react'
+    }
+};
+
+// const work = company.web.work;
+// const framework = company.web.framework;
+//or
+const {work, framework} = company.web;
+const {food} = company.ceo;
+console.log(work,framework,food);
+
+const [first, last] = ['jahangir', 'alam'];
+console.log(first,last);
