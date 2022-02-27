@@ -11,8 +11,14 @@ const displaybuddies = data => {
     const buddiesDiv = document.getElementById('buddies');
     for(const buddy of buddies){
         // console.log(buddy.name);
+        // console.log(buddy.name.first, buddy.name.last);
         const p = document.createElement('p');
-        p.innerText = buddy.phone;
+        p.innerText = `
+        Name: ${buddy.name.first} ${buddy.name.last} 
+        email: ${buddy.email}
+        phone: ${buddy.phone}
+        `;
         buddiesDiv.appendChild(p);
     }
 }
+
