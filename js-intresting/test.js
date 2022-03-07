@@ -59,3 +59,4 @@ console.log('first: ami sobar age');
 console.log('second : I am the second parson');
 console.log('third : ami 3 number parson');
 console.log('fourth : ami ek hali purno korsi');
+doSomething();// just ato tuko function add korle amra uporer output pabo
